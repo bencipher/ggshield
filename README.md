@@ -456,7 +456,9 @@ secret:
 
 ## Updating a v1 configuration file
 
-To update a v1 configuration file to a v2 configuration file, follow these steps:
+If you have a v1 configuration file, you can run `ggshield config update` to let ggshield update it for you. The command updates the configuration file in place, but it keeps the previous version as a `.gitguardian.yaml.old` file.
+
+Alternatively, you can follow these steps to update your configuration file manually:
 
 1. Add a `version: 2` entry.
 2. If the configuration file contains an `all-policies` key, remove it: it's no longer supported.
